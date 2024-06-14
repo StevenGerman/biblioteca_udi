@@ -1,0 +1,10 @@
+CREATE TABLE `Users` (
+	`idUser` INT(11) NOT NULL AUTO_INCREMENT,
+	`userNombre` VARCHAR(255) NOT NULL DEFAULT 'nombre',
+	`userApellido` VARCHAR(255) NOT NULL DEFAULT 'apellido',
+	`userEmail` VARCHAR(255) NOT NULL DEFAULT 'email',
+	`userPassword` VARCHAR(255) NOT NULL DEFAULT 'password',
+	`created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	`updated_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (`idUser`)
+); 
